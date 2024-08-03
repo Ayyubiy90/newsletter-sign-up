@@ -19,8 +19,8 @@ body {
 
 /* Container styles */
 .container {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 930px;
+  margin: 20px auto;
 }
 
 /* Card styles */
@@ -30,12 +30,17 @@ body {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   display: flex;
+  width: 100%;
+  max-height: 600px; /* Adjust this value as needed */
 }
 
 /* Content styles */
 .content {
-  padding: 40px;
+  padding: 40px 40px 40px 60px;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
@@ -129,6 +134,7 @@ button:hover {
   background-image: url("assets/images/illustration-sign-up-desktop.svg");
   background-size: cover;
   background-position: center;
+  min-width: 400px; /* Ensure the image container has a minimum width */
 }
 
 /* Success message styles */
@@ -162,14 +168,12 @@ button:hover {
   width: 100%;
 }
 
-/* Attribution styles */
+/* Footer styles */
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
+  position: relative;
   width: 100%;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 .attribution {
@@ -184,18 +188,25 @@ footer {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+
   .card {
     flex-direction: column-reverse;
-    margin: 0 20px;
+    height: auto;
+    max-height: none;
+    border-radius: 0;
   }
 
   .image-container {
     height: 250px;
+    min-width: auto;
     background-image: url("assets/images/illustration-sign-up-mobile.svg");
   }
 
   .content {
-    padding: 30px;
+    padding: 40px 20px;
   }
 
   h1 {
@@ -204,5 +215,9 @@ footer {
 
   #success-message {
     margin: 0 20px;
+  }
+
+  footer {
+    padding: 10px 20px;
   }
 }

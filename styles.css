@@ -12,6 +12,7 @@ body {
   color: hsl(234, 29%, 20%);
   background-color: hsl(235, 18%, 26%);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -19,6 +20,7 @@ body {
 
 /* Container styles */
 .container {
+  flex: 1;
   max-width: 930px;
   margin: 20px auto;
   display: flex;
@@ -175,12 +177,9 @@ button:hover {
 
 /* Footer styles */
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .attribution {

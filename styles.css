@@ -110,6 +110,19 @@ button:hover {
   background-color: hsl(4, 100%, 67%);
 }
 
+.error {
+  border-color: hsl(4, 100%, 67%) !important;
+  background-color: hsla(4, 100%, 67%, 0.15);
+  color: hsl(4, 100%, 67%);
+}
+
+.error-message {
+  color: hsl(4, 100%, 67%);
+  margin-top: -15px;
+  margin-bottom: 20px;
+  font-size: 0.875rem;
+}
+
 /* Image container styles */
 .image-container {
   flex: 1;
@@ -150,10 +163,18 @@ button:hover {
 }
 
 /* Attribution styles */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin-top: 20px;
   color: hsl(0, 0%, 100%);
 }
 
